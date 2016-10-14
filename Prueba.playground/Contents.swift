@@ -27,5 +27,28 @@ idiomas[2]
 
 idiomas[5]
 
+//Arreglos numericos
+var numeros : [Int] = [4,10,9,11,10,8]
+numeros[4]
+
+//Propiedadas
+//Metodos
+
+idiomas.count //propiedad
+
+idiomas.append("Italiano") //Funcion o Metodo
+
+let italiano = idiomas.removeLast()
+
+idiomas
+
+idiomas.insert("inlges Britanico",at:2) //insertar elementos
+
+idiomas.sort() // ordernar
+
+
+
+
+
 
 
