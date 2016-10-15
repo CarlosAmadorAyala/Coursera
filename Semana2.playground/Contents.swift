@@ -64,7 +64,7 @@ for s in baseDeDatos{
 var meses = 1...12
 
 for mes in meses{
-    if mes == 1 {
+    	 mes == 1 {
         print("Enero")
     }else if mes == 2{
         print("Febrero")
