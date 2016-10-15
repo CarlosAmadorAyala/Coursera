@@ -73,3 +73,21 @@ for mes in meses{
     }
 }
 */
+//switch 
+//variables
+//al menos un caso
+//una seccion de default
+var meses = 1...12
+
+for mes in meses{
+    switch mes {
+    case 1,2,3:
+        print("mes templado")
+    case 4...7:
+        print("mes caluroso")
+    case 12:
+        print("mes  frio")
+    default:
+        print("clima desconocido")
+    }
+}
