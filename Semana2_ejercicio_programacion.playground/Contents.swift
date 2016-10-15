@@ -26,7 +26,6 @@ var numeros = [Int] (1...100)
 //2da Regla, 3ra Regla y 4ta Regla
 
 for i in numeros {
-
     switch (numeros[i-1])  {
     //3.d.-
     case 30...40:
