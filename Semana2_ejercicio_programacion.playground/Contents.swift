@@ -16,7 +16,7 @@ import UIKit
  */
 
 //1ra Regla
-var numeros = [Int] (1...100)
+var numeros = [Int] (0...100)
 
 //2da Regla
 /*for i in numeros {
@@ -26,21 +26,21 @@ var numeros = [Int] (1...100)
 //2da Regla, 3ra Regla y 4ta Regla
 
 for i in numeros {
-    switch (numeros[i-1])  {
+    switch (numeros[i])  {
     //3.d.-
     case 30...40:
             print("# el \(numeros[i-1]) "+"Viva Swift!!!")
     default:
-        if (numeros[i-1])%5 == 0
+        if (numeros[i])%5 == 0
         {
             //3.a.-
-            print("# el \(numeros[i-1]) "+"Bingo!!!")
+            print("# el \(numeros[i]) "+"Bingo!!!")
         }else if (numeros[i-1])%2 == 0{
             //3.b.-
-            print("# el \(numeros[i-1]) "+"par!!!")
+            print("# el \(numeros[i]) "+"par!!!")
         }else if true{
             //3.c.-
-            print("# el \(numeros[i-1]) "+"impar!!!")
+            print("# el \(numeros[i]) "+"impar!!!")
         }
     }
 }
