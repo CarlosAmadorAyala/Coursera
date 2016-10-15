@@ -44,5 +44,7 @@ for i in numeros {
                 print("# el \(numeros[i]) "+"impar!!!")
             }
         }
+    }else if true{
+        print("\(numeros[i])")
     }
 }
