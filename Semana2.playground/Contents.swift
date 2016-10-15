@@ -2,10 +2,8 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
-
-var idiomas = ["español","chino","ingles","frances","portugues","madarin","italiano"]
+//var str = "Hello, playground"
+//var idiomas = ["español","chino","ingles","frances","portugues","madarin","italiano"]
 //Ciclo For
 //no causa de paro
 /*
@@ -62,7 +60,7 @@ for s in baseDeDatos{
     print(s)
 }
 */
-
+/* sentencia IF ELSE
 var meses = 1...12
 
 for mes in meses{
@@ -74,3 +72,4 @@ for mes in meses{
         print("Otros Meses")
     }
 }
+*/
