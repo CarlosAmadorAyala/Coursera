@@ -46,7 +46,7 @@ repeat {
     indice += 1
 }while indice<idiomas.count
 */
-
+/*
 var nombres = ["Deyanira","Lucy","Hugo","Carlos","Caleb","Karla","Judith","Jose"]
 //for var i = 0; i < nombres.count;i++ Clasico
 for i in 0 ..< nombres.count {
@@ -56,3 +56,10 @@ for i in 0 ..< nombres.count {
 for n in nombres{
     print("\(n)")
 }
+
+*/
+var baseDeDatos = ["David","Luke","Han","Clark","Iliana"]
+for s in baseDeDatos{
+    print(s)
+}
+
