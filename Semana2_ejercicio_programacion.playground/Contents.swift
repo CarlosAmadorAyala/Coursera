@@ -30,13 +30,13 @@ for i in numeros {
         switch (numeros[i])  {
         //3.d.-
         case 30...40:
-                print("# el \(numeros[i-1]) "+"Viva Swift!!!")
+                print("# el \(numeros[i]) "+"Viva Swift!!!")
         default:
             if (numeros[i])%5 == 0
             {
                 //3.a.-
                 print("# el \(numeros[i]) "+"Bingo!!!")
-            }else if (numeros[i-1])%2 == 0 {
+            }else if (numeros[i])%2 == 0 {
                 //3.b.-
                 print("# el \(numeros[i]) "+"par!!!")
             }else if true{
