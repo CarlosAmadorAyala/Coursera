@@ -59,6 +59,7 @@ return (true,"b")
 
 a(nombre:"a")
  **/
+/*
 func calcularIdicieDeMasaCorporal(pesoIntegral peso : Double, altura : Double) ->(imcCalculado: Double, mensajeDeSalida: String){
     //var peso = 70.0
     //var altura = 1.60
@@ -92,5 +93,52 @@ var pelicula : (nombre: String, añoDeSalida: Int, calificacion : Double) = ("Go
 pelicula.añoDeSalida
 pelicula.nombre
 pelicula.calificacion
+
+*/
+
+//opcionas ? declarar un  !obtener el opcional
+//
+
+var numero : Int? = nil//90
+
+numero
+
+numero  = 5
+
+numero = nil
+
+
+numero = 6
+
+
+if numero != nil {
+    let numeroString : String = String( numero!)
+    print(numeroString)
+}
+
+/*
+var nom: String?
+
+nom="da"
+nom=nil
+*/
+
+
+
+func profesores( id: String) -> String? {
+    let diccionarioDeProfesores = ["007":"Carlos",
+                                   "002":"Caleb",
+                                   "000":"Karla",
+                                   "005":"Rosario",
+                                   ]
+    let nombre : String? = diccionarioDeProfesores[id]
+    return nombre
+}
+
+if let nombre = profesores(id: "002"){
+    nombre
+}else {
+    print("No hay")
+}
 
 
