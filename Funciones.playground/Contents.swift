@@ -166,7 +166,7 @@ for _ in 1...power {
 }
 print("\(base) to the power of \(power) is \(answer)")
 */
-
+/*
 // Prints "3 to the power of 10 is 59049"
 let finalSquare = 25
 var board = [Int](repeating: 0, count: finalSquare + 1)
@@ -270,4 +270,74 @@ let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
 if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
     print("min is \(bounds.min) and max is \(bounds.max)")
 }
+
+*/
+///Enuemracion
+
+let ciudades = ["Los Mochis","Culiacan","Mazatlan","Guasave"]
+
+enum Ciudad : Int{
+    case LosMochis = 0 ,Guasave = 60 ,Culiacan = 230 ,Mazatlan = 450
+}
+/*
+func obtenerCiudad(ciudad: String) ->String{
+    switch ciudad{
+    case "Los Mochis", "Guasave" :
+            return "Norte"
+    case "Mazatlan","Culiacan" :
+            return "Sur"
+    default:
+            return "Opcion invalidad"
+    }
+}
+*/
+
+func calcualrDistancia( ciudad: Ciudad ) ->Int{
+    return Ciudad.LosMochis.rawValue + ciudad.rawValue
+}
+
+calcualrDistancia( ciudad: Ciudad.Guasave)
+calcualrDistancia( ciudad: Ciudad.Mazatlan)
+
+
+func obtenerCiudad(ciudad: Ciudad) ->String{
+    switch ciudad{
+    case Ciudad.LosMochis, .Guasave :
+        return "Norte"
+    case Ciudad.Mazatlan :
+        return "Sur"
+    default :
+        return "Opcion invalidad"
+    }
+}
+
+
+
+obtenerCiudad(ciudad: Ciudad.LosMochis)
+
+//valor asociado
+
+
+enum LecturaDeDatos{
+    case Digitos(Int, Int, Int)
+    case QrCodigo(String)
+}
+
+var entradaDatos = LecturaDeDatos.Digitos(3, 4, 5)
+
+entradaDatos = .QrCodigo("AACCDD")
+
+
+switch entradaDatos {
+    case .Digitos(let uno, let dos, let tres):
+        print("\(uno) \(dos) \(tres)")
+    case .QrCodigo(let qr):
+        print(qr)
+}
+
+
+
+
+
+
 
